@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Campus Companion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Campus Companion</h1>
+<p>Everything you need, in one place.</p>
+</header>
+<nav id="nav"></nav>
+<main>
+
+<section id="home">
+<div class="note">👋 Edit the sample data in the <b>DATA</b> section of this file to match your college. Everything here is placeholder.</div>
+<h2>Quick access</h2>
+<div class="grid" id="quick"></div>
+<h2 style="margin-top:22px">Coming up</h2>
+<div class="grid" id="upcoming"></div>
+</section>
+
+<section id="schedule"><h2>MST &amp; Exam Schedule</h2><div class="grid" id="scheduleList"></div></section>
+
+<section id="resources"><h2>Papers</h2>
+<input type="search" id="resSearch" placeholder="Search subject, e.g. Maths, Physics...">
+<div class="grid" id="resList"></div></section>
+
+<section id="campus"><h2>Lab Finder</h2>
+<div class="card">
+<h3>🔎 CIC Lab Finder</h3>
+<p class="muted">Search for any lab or room.</p>
+<a class="btn" href="https://script.google.com/macros/s/AKfycbxY4t-orZwdyW9tMvNhoZTQHNqUa8SlheV0V8OGPqkxTpsl9h2wa0Rdg6ISQHJAY6DY/exec" target="_blank" rel="noopener">Open Lab Finder</a>
+<div class="card" style="margin-top:12px">
+<h3>🗺️ College Map</h3>
+<p class="muted">Tap the map to view it full screen.</p>
+<img src="map.jpg" alt="College campus map" class="map" onclick="openMap()" style="cursor:pointer">
+</div></section>
+
+<section id="links"><h2>Important Links</h2><div class="grid" id="linkList"></div></section>
+
+<section id="senior"><h2>Ask any Query </h2>
+<input type="search" id="faqSearch" placeholder="Search questions...">
+<div id="faqList"></div>
+<div class="note">Have a question that's not here? Add your contact or a form link in the DATA section.</div></section>
+
+</main>
+<div id="mapView" onclick="closeMap()">
+<button onclick="closeMap()">✕</button>
+<img src="map.jpg" alt="College campus map">
+</div>
+<script src="script.js"></script>
+</body>
+</html>
